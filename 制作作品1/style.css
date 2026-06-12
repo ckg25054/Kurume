@@ -23,7 +23,7 @@ body {
 }
 nav {
   margin: 0 auto 40px;
-  width: 780px;
+  width: 770px;
   font-size: 25px;
 }
 nav li {
@@ -48,4 +48,10 @@ nav a {
 a {
   color: #333333;
   text-decoration: none;
+}
+a:hover {
+  color: #999999;
+}
+.map {
+
 }
