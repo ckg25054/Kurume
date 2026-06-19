@@ -19,12 +19,12 @@
     text-align: center;
 }
 body {
-    background-color: rgb(203, 226, 157)
 }
 nav {
   margin: 0 auto 40px;
   width: 770px;
   font-size: 25px;
+  background-color: #666666;
 }
 nav li {
   border-left: solid 1.5px #666666;
