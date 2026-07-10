@@ -2,21 +2,8 @@
     margin: 0;
     padding: 0;
 }
-.page-header {
-    text-align: center;
-    color: white;
-    width: 100%;
-    padding: 20px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-}
-.page-header {
-    text-align: center;
-    font-size: 20px;
-}
-.page-title {
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
+.logo {
+  
 }
 nav {
   margin: 20px auto 20px;

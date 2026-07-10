@@ -1,0 +1,454 @@
+/* ------------------------
+   共通設定
+------------------------ */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif;
+    color:#333;
+    background:#fff;
+    line-height:1.8;
+}
+
+a{
+    text-decoration:none;
+}
+
+img{
+    width:100%;
+}
+
+/* ------------------------
+   ヘッダー
+------------------------ */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#fff;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+.logo h2{
+    color:#2d8a4a;
+}
+
+.logo p{
+    font-size:13px;
+    color:#666;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+nav a{
+    color:#333;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#2d8a4a;
+}
+
+.contact{
+    background:#2d8a4a;
+    color:#fff;
+    padding:12px 25px;
+    border-radius:5px;
+    transition:.3s;
+}
+
+.contact:hover{
+    background:#256f3c;
+}
+
+/* ------------------------
+   メイン画像
+------------------------ */
+
+.hero{
+    height:650px;
+
+    background:
+    linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),
+    url("images/JR久留米駅.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+
+    padding-left:10%;
+}
+
+.hero-text{
+    color:white;
+}
+
+.hero h1{
+    font-size:64px;
+    margin-bottom:25px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:40px;
+}
+
+.button{
+
+    display:inline-block;
+
+    background:#2d8a4a;
+
+    color:white;
+
+    padding:15px 40px;
+
+    border-radius:5px;
+
+    transition:.3s;
+
+}
+
+.button:hover{
+
+    background:#256f3c;
+
+}
+
+/* ------------------------
+   共通
+------------------------ */
+
+section{
+
+    padding:90px 10%;
+
+}
+
+section h2{
+
+    text-align:center;
+
+    font-size:40px;
+
+    color:#2d8a4a;
+
+    margin-bottom:60px;
+
+}
+
+/* ------------------------
+   久留米市について
+------------------------ */
+
+.about-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:60px;
+
+}
+
+.about-image{
+
+    width:45%;
+
+    height:320px;
+
+    background:#ddd url("images/筑後川.jpg") center/cover;
+
+    border-radius:10px;
+
+}
+
+.about-text{
+
+    width:55%;
+
+}
+
+.about-text p{
+
+    margin-bottom:20px;
+
+}
+
+/* ------------------------
+   魅力
+------------------------ */
+
+.feature{
+
+    background:#fafaf7;
+
+}
+
+.cards{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:25px;
+
+}
+
+.card{
+
+    width:24%;
+
+    background:white;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.card-image{
+    height:200px;
+    background:#ccc;
+}
+.card h3{
+
+    margin:20px;
+
+    color:#2d8a4a;
+
+}
+
+.card p{
+
+    margin:0 20px 20px;
+
+}
+
+.center{
+
+    text-align:center;
+
+    margin-top:45px;
+
+}
+
+/* ------------------------
+   お知らせ
+------------------------ */
+
+.news-list{
+
+    width:90%;
+
+    margin:auto;
+
+}
+
+.news-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+    padding:25px;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+.tag{
+
+    color:white;
+
+    padding:5px 15px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+}
+
+.blue{
+
+    background:#2d7cff;
+
+}
+
+.green{
+
+    background:#2d8a4a;
+
+}
+
+.pink{
+
+    background:#ff5b8a;
+
+}
+
+/* ------------------------
+   フッター
+------------------------ */
+
+footer{
+
+    background:#eef4ef;
+
+    margin-top:80px;
+
+}
+
+.footer-container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:60px 10%;
+
+}
+
+.footer-container h3{
+
+    margin-bottom:20px;
+
+    color:#2d8a4a;
+
+}
+
+.footer-container ul{
+
+    list-style:none;
+
+}
+
+.footer-container li{
+
+    margin-bottom:10px;
+
+}
+
+.copy{
+
+    text-align:center;
+
+    padding:20px;
+
+    background:#2d8a4a;
+
+    color:white;
+
+}
+
+/* ------------------------
+   スマホ対応
+------------------------ */
+
+@media(max-width:768px){
+
+header{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+nav ul{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.hero{
+
+    height:500px;
+
+    padding:40px;
+
+}
+
+.hero h1{
+
+    font-size:42px;
+
+}
+
+.about-box{
+
+    flex-direction:column;
+
+}
+
+.about-image{
+
+    width:100%;
+
+}
+
+.about-text{
+
+    width:100%;
+
+}
+
+.cards{
+
+    flex-direction:column;
+
+}
+
+.card{
+
+    width:100%;
+
+}
+
+.footer-container{
+
+    flex-direction:column;
+
+    gap:40px;
+
+}
+
+.news-item{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+}
+
+}
