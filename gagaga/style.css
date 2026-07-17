@@ -237,10 +237,7 @@ section h2{
     height:200px;
     background:#ccc;
 }
-#card-image1{
-    height:200px;
-}
-#card-image2{
+.card-images{
     height:200px;
 }
 .card h3{
