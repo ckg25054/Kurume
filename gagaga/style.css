@@ -5,6 +5,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    border: solid 0px black;
 }
 
 body{
@@ -157,6 +158,9 @@ section h2{
    久留米市について
 ------------------------ */
 
+.about {
+    padding: 90px 3%;;
+}
 .about-box{
 
     display:flex;
@@ -189,6 +193,40 @@ section h2{
 
     margin-bottom:20px;
 
+}
+.about-box{
+    display:flex;
+    gap:40px;
+    align-items:flex-start;
+}
+
+/* 左側のお知らせ */
+.news-side{
+    width:300px;
+    background:#f7f7f7;
+    padding:20px;
+    border-radius:10px;
+}
+
+.news-side h3{
+    text-align:center;
+    color:#2d8a4a;
+    margin-bottom:20px;
+}
+
+/* 真ん中の画像 */
+.about-image{
+    width:450px;
+}
+
+.about-image img{
+    width:100%;
+    border-radius:10px;
+}
+
+/* 右側の説明 */
+.about-text{
+    flex:1;
 }
 
 /* ------------------------
