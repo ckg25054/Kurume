@@ -1,465 +1,546 @@
-/* ------------------------
-   共通設定
------------------------- */
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    border: solid 0px black;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    font-family:"Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif;
-    color:#333;
-    background:#fff;
-    line-height:1.8;
+body {
+    font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    color: #333;
+    background: #fff;
+    line-height: 1.8;
 }
 
-a{
-    text-decoration:none;
+a {
+    text-decoration: none;
 }
 
-img{
-    width:100%;
+img {
+    width: 100%;
+    display: block;
 }
 
-/* ------------------------
+
+/* ==================================================
    ヘッダー
------------------------- */
+================================================== */
 
-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 8%;
-    background:#fff;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    box-shadow:0 2px 8px rgba(0,0,0,.08);
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+
+    background: #fff;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.logo h2{
-    color:#2d8a4a;
+
+/* --------------------------
+   ロゴ
+-------------------------- */
+
+.logo h2 {
+    color: #2d8a4a;
 }
 
-.logo p{
-    font-size:13px;
-    color:#666;
+.logo p {
+    font-size: 13px;
+    color: #666;
 }
 
-nav ul{
-    display:flex;
-    list-style:none;
-    gap:35px;
+
+/* --------------------------
+   ナビゲーション
+-------------------------- */
+
+nav ul {
+    display: flex;
+    gap: 35px;
+
+    list-style: none;
 }
 
-nav a{
-    color:#333;
-    font-weight:bold;
-    transition:.3s;
+nav a {
+    color: #333;
+    font-weight: bold;
+
+    transition: 0.3s;
 }
 
-nav a:hover{
-    color:#2d8a4a;
+nav a:hover {
+    color: #2d8a4a;
 }
 
-.contact{
-    background:#2d8a4a;
-    color:#fff;
-    padding:12px 25px;
-    border-radius:5px;
-    transition:.3s;
+
+/* --------------------------
+   アクセスボタン
+-------------------------- */
+
+.contact {
+    padding: 12px 25px;
+
+    background: #2d8a4a;
+    color: #fff;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
 }
 
-.contact:hover{
-    background:#256f3c;
+.contact:hover {
+    background: #256f3c;
 }
 
-/* ------------------------
-   メイン画像
------------------------- */
 
-.hero{
-    height:650px;
+/* ==================================================
+   メインビジュアル
+================================================== */
+
+.hero {
+    height: 650px;
 
     background:
-    linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),
-    url("images/JR久留米駅.jpg");
+        linear-gradient(
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)
+        ),
+        url("images/JR久留米駅.jpg");
 
-    background-size:cover;
-    background-position:center;
+    background-size: cover;
+    background-position: center;
 
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
 
-    padding-left:10%;
+    padding-left: 10%;
 }
 
-.hero-text{
-    color:white;
+.hero-text {
+    color: #fff;
 }
 
-.hero h1{
-    font-size:64px;
-    margin-bottom:25px;
+.hero h1 {
+    font-size: 64px;
+    line-height: 1.5;
+
+    margin-bottom: 25px;
 }
 
-.hero p{
-    font-size:20px;
-    margin-bottom:40px;
+.hero p {
+    font-size: 20px;
+
+    margin-bottom: 40px;
 }
 
-.button{
 
-    display:inline-block;
+/* ==================================================
+   ボタン
+================================================== */
 
-    background:#2d8a4a;
+.button {
+    display: inline-block;
 
-    color:white;
+    padding: 15px 40px;
 
-    padding:15px 40px;
+    background: #2d8a4a;
+    color: #fff;
 
-    border-radius:5px;
+    border-radius: 5px;
 
-    transition:.3s;
-
+    transition: 0.3s;
 }
 
-.button:hover{
-
-    background:#256f3c;
-
+.button:hover {
+    background: #256f3c;
 }
 
-/* ------------------------
-   共通
------------------------- */
 
-section{
+/* ==================================================
+   セクション共通
+================================================== */
 
-    padding:90px 10%;
-
+section {
+    padding: 90px 10%;
 }
 
-section h2{
+section h2 {
+    text-align: center;
 
-    text-align:center;
+    font-size: 40px;
+    color: #2d8a4a;
 
-    font-size:40px;
-
-    color:#2d8a4a;
-
-    margin-bottom:60px;
-
+    margin-bottom: 60px;
 }
 
-/* ------------------------
+
+/* ==================================================
    久留米市について
------------------------- */
+================================================== */
 
 .about {
-    padding: 90px 3%;;
-}
-.about-box{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:60px;
-
+    padding: 90px 3%;
 }
 
-.about-image{
 
-    width:45%;
+/* --------------------------
+   3列レイアウト
+-------------------------- */
 
-    height:320px;
+.about-box {
+    display: flex;
+    align-items: flex-start;
 
-    background:#ddd url("images/筑後川.jpg") center/cover;
-
-    border-radius:10px;
-
+    gap: 40px;
 }
 
-.about-text{
 
-    width:55%;
+/* --------------------------
+   左側：お知らせ
+-------------------------- */
 
+.news-side {
+    width: 30%;
+
+    padding: 20px;
+
+    background: #f7f7f7;
+
+    border-radius: 10px;
 }
 
-.about-text p{
+.news-side h3 {
+    text-align: center;
 
-    margin-bottom:20px;
+    color: #2d8a4a;
 
-}
-.about-box{
-    display:flex;
-    gap:40px;
-    align-items:flex-start;
+    margin-bottom: 20px;
 }
 
-/* 左側のお知らせ */
-.news-side{
-    width:450px;
-    background:#f7f7f7;
-    padding:20px;
-    border-radius:10px;
+
+/* --------------------------
+   お知らせ一覧
+-------------------------- */
+
+.news-list {
+    width: 100%;
+    margin: auto;
 }
 
-.news-side h3{
-    text-align:center;
-    color:#2d8a4a;
-    margin-bottom:20px;
+.news-item {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #ddd;
 }
 
-/* 真ん中の画像 */
-.about-image{
-    width:450px;
+.news-item:last-child {
+    border-bottom: none;
 }
 
-.about-image img{
-    width:100%;
-    border-radius:10px;
+
+/* --------------------------
+   お知らせタグ
+-------------------------- */
+
+.tag {
+    flex-shrink: 0;
+
+    padding: 5px 15px;
+
+    color: #fff;
+
+    border-radius: 30px;
+
+    font-size: 14px;
 }
 
-/* 右側の説明 */
-.about-text{
-    flex:1;
+.blue {
+    background: #2d7cff;
 }
 
-/* ------------------------
-   魅力
------------------------- */
-
-.feature{
-
-    background:#fafaf7;
-
+.green {
+    background: #2d8a4a;
 }
 
-.cards{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    gap:25px;
-
+.pink {
+    background: #ff5b8a;
 }
 
-.card{
 
-    width:24%;
+/* --------------------------
+   真ん中：画像
+-------------------------- */
 
-    background:white;
-
-    border-radius:10px;
-
-    overflow:hidden;
-
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
-
-    transition:.3s;
-
+.about-image {
+    width: 35%;
 }
 
-.card:hover{
+.about-image img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
 
-    transform:translateY(-8px);
-
+    border-radius: 10px;
 }
 
-.card-image{
-    height:200px;
-    background:#ccc;
-}
-.card-images{
-    height:200px;
-}
-.card h3{
 
-    margin:20px;
+/* --------------------------
+   右側：説明
+-------------------------- */
 
-    color:#2d8a4a;
-
+.about-text {
+    width: 35%;
 }
 
-.card p{
-
-    margin:0 20px 20px;
-
+.about-text p {
+    margin-bottom: 20px;
 }
 
-.center{
 
-    text-align:center;
+/* ==================================================
+   久留米の魅力
+================================================== */
 
-    margin-top:45px;
-
+.feature {
+    background: #fafaf7;
 }
 
-/* ------------------------
-   お知らせ
------------------------- */
 
-.news-list{
+/* --------------------------
+   カード一覧
+-------------------------- */
 
-    width:90%;
+.cards {
+    display: flex;
+    justify-content: space-between;
 
-    margin:auto;
-
+    gap: 25px;
 }
 
-.news-item{
 
-    display:flex;
+/* --------------------------
+   カード
+-------------------------- */
 
-    align-items:center;
+.card {
+    width: 24%;
 
-    gap:25px;
+    background: #fff;
 
-    padding:25px;
+    border-radius: 10px;
 
-    border-bottom:1px solid #ddd;
+    overflow: hidden;
 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
 }
 
-.tag{
-
-    color:white;
-
-    padding:5px 15px;
-
-    border-radius:30px;
-
-    font-size:14px;
-
+.card:hover {
+    transform: translateY(-8px);
 }
 
-.blue{
 
-    background:#2d7cff;
+/* --------------------------
+   カード画像
+-------------------------- */
 
+.card-image {
+    height: 200px;
+
+    background: #ccc;
+
+    overflow: hidden;
 }
 
-.green{
+.card-images {
+    width: 100%;
+    height: 200px;
 
-    background:#2d8a4a;
+    object-fit: cover;
 
+    transition: 0.3s;
 }
 
-.pink{
-
-    background:#ff5b8a;
-
+.card:hover .card-images {
+    transform: scale(1.05);
 }
 
-/* ------------------------
+
+/* --------------------------
+   カード文字
+-------------------------- */
+
+.card h3 {
+    margin: 20px;
+
+    color: #2d8a4a;
+}
+
+.card p {
+    margin: 0 20px 20px;
+}
+
+
+/* --------------------------
+   中央ボタン
+-------------------------- */
+
+.center {
+    text-align: center;
+
+    margin-top: 45px;
+}
+
+
+/* ==================================================
    フッター
------------------------- */
+================================================== */
 
-footer{
+footer {
+    background: #eef4ef;
 
-    background:#eef4ef;
-
-    margin-top:80px;
-
+    margin-top: 80px;
 }
 
-.copy{
+.copy {
+    text-align: center;
 
-    text-align:center;
+    padding: 20px;
 
-    padding:20px;
+    background: #2d8a4a;
 
-    background:#2d8a4a;
-
-    color:white;
-
+    color: #fff;
 }
 
-/* ------------------------
-   スマホ対応
------------------------- */
 
-@media(max-width:768px){
+/* ==================================================
+   スマートフォン対応
+================================================== */
 
-header{
+@media (max-width: 768px) {
 
-    flex-direction:column;
+    /* --------------------------
+       ヘッダー
+    -------------------------- */
 
-    gap:20px;
+    header {
+        flex-direction: column;
 
-}
+        gap: 20px;
+    }
 
-nav ul{
+    nav ul {
+        flex-wrap: wrap;
 
-    flex-wrap:wrap;
+        justify-content: center;
 
-    justify-content:center;
+        gap: 15px;
+    }
 
-}
 
-.hero{
+    /* --------------------------
+       メインビジュアル
+    -------------------------- */
 
-    height:500px;
+    .hero {
+        height: 500px;
 
-    padding:40px;
+        padding: 40px;
+    }
 
-}
+    .hero h1 {
+        font-size: 42px;
+    }
 
-.hero h1{
+    .hero p {
+        font-size: 16px;
+    }
 
-    font-size:42px;
 
-}
+    /* --------------------------
+       セクション
+    -------------------------- */
 
-.about-box{
+    section {
+        padding: 70px 5%;
+    }
 
-    flex-direction:column;
+    section h2 {
+        font-size: 32px;
 
-}
+        margin-bottom: 40px;
+    }
 
-.about-image{
 
-    width:100%;
+    /* --------------------------
+       久留米市について
+    -------------------------- */
 
-}
+    .about {
+        padding: 70px 5%;
+    }
 
-.about-text{
+    .about-box {
+        flex-direction: column;
+    }
 
-    width:100%;
+    .news-side,
+    .about-image,
+    .about-text {
+        width: 100%;
+    }
 
-}
+    .about-image img {
+        height: 300px;
+    }
 
-.cards{
 
-    flex-direction:column;
+    /* --------------------------
+       魅力カード
+    -------------------------- */
 
-}
+    .cards {
+        flex-direction: column;
 
-.card{
+        gap: 30px;
+    }
 
-    width:100%;
+    .card {
+        width: 100%;
+    }
 
-}
 
-.footer-container{
+    /* --------------------------
+       お知らせ
+    -------------------------- */
 
-    flex-direction:column;
+    .news-item {
+        flex-direction: column;
 
-    gap:40px;
+        align-items: flex-start;
 
-}
+        gap: 8px;
+    }
 
-.news-item{
 
-    flex-direction:column;
+    /* --------------------------
+       ボタン
+    -------------------------- */
 
-    align-items:flex-start;
-
-}
+    .button {
+        padding: 12px 30px;
+    }
 
 }
