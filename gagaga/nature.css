@@ -1,0 +1,404 @@
+/* ==================================================
+   共通設定
+================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+
+    color: #333;
+
+    background: #fff;
+
+    line-height: 1.8;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+/* ==================================================
+   ヘッダー
+================================================== */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+
+    background: #fff;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ロゴ */
+
+.logo h2 {
+    color: #2d8a4a;
+}
+
+.logo p {
+    font-size: 13px;
+    color: #666;
+}
+
+
+/* ナビ */
+
+nav ul {
+    display: flex;
+
+    gap: 35px;
+
+    list-style: none;
+}
+
+nav a {
+    color: #333;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #2d8a4a;
+}
+
+
+/* アクセス */
+
+.contact {
+    padding: 12px 25px;
+
+    background: #2d8a4a;
+
+    color: #fff;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+.contact:hover {
+    background: #256f3c;
+}
+
+
+/* ==================================================
+   メインビジュアル
+================================================== */
+
+.hero {
+    height: 600px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.25)
+        ),
+        url("images/高良大社.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+.hero-text {
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 60px;
+
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+
+/* ==================================================
+   共通セクション
+================================================== */
+
+section {
+    padding: 90px 10%;
+}
+
+section h2 {
+    text-align: center;
+
+    font-size: 40px;
+
+    color: #2d8a4a;
+
+    margin-bottom: 50px;
+}
+
+
+/* ==================================================
+   自然・景観紹介
+================================================== */
+
+.intro {
+    max-width: 900px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.intro p {
+    margin-bottom: 20px;
+
+    font-size: 17px;
+}
+
+
+/* ==================================================
+   自然スポット
+================================================== */
+
+.spots {
+    background: #fafaf7;
+}
+
+.spot-list {
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+
+/* スポット */
+
+.spot {
+    display: flex;
+
+    align-items: center;
+
+    gap: 50px;
+
+    margin-bottom: 60px;
+
+    padding: 30px;
+
+    background: #fff;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.spot:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+
+/* スポット画像 */
+
+.spot-image {
+    width: 50%;
+
+    height: 300px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+}
+
+.spot-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.3s;
+}
+
+.spot:hover img {
+    transform: scale(1.05);
+}
+
+
+/* スポット文章 */
+
+.spot-text {
+    width: 50%;
+}
+
+.spot-text h3 {
+    color: #2d8a4a;
+
+    font-size: 28px;
+
+    margin-bottom: 20px;
+}
+
+.spot-text p {
+    font-size: 16px;
+}
+
+
+/* ==================================================
+   戻るボタン
+================================================== */
+
+.back {
+    text-align: center;
+
+    padding: 60px 0;
+}
+
+.button {
+    display: inline-block;
+
+    padding: 15px 40px;
+
+    background: #2d8a4a;
+
+    color: #fff;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #256f3c;
+}
+
+
+/* ==================================================
+   フッター
+================================================== */
+
+footer {
+    margin-top: 0;
+
+    background: #eef4ef;
+}
+
+.copy {
+    text-align: center;
+
+    padding: 20px;
+
+    background: #2d8a4a;
+
+    color: #fff;
+}
+
+
+/* ==================================================
+   スマートフォン対応
+================================================== */
+
+@media (max-width: 768px) {
+
+    /* ヘッダー */
+
+    header {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+    .contact {
+        display: none;
+    }
+
+
+    /* メインビジュアル */
+
+    .hero {
+        height: 400px;
+
+        padding: 30px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+
+    /* セクション */
+
+    section {
+        padding: 70px 5%;
+    }
+
+    section h2 {
+        font-size: 32px;
+
+        margin-bottom: 40px;
+    }
+
+
+    /* 自然スポット */
+
+    .spot,
+    .spot:nth-child(even) {
+        flex-direction: column;
+
+        gap: 25px;
+
+        padding: 20px;
+    }
+
+    .spot-image,
+    .spot-text {
+        width: 100%;
+    }
+
+    .spot-image {
+        height: 250px;
+    }
+
+    .spot-text h3 {
+        font-size: 24px;
+    }
+
+}
