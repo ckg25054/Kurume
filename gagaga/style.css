@@ -48,6 +48,7 @@ header {
 
 .logo h2 {
     color: #2d8a4a;
+    font-size: 25px;
 }
 
 .logo p {
@@ -84,14 +85,15 @@ nav a:hover {
 -------------------------- */
 
 .contact {
-    padding: 12px 25px;
+    padding: 10px 22px;
 
-    background: #2d8a4a;
     color: #fff;
+    background: #2d8a4a;
 
-    border-radius: 5px;
+    border-radius: 25px;
 
-    transition: 0.3s;
+    font-weight: bold;
+
 }
 
 .contact:hover {
@@ -155,6 +157,8 @@ nav a:hover {
     border-radius: 5px;
 
     transition: 0.3s;
+
+    font-size: 20px;
 }
 
 .button:hover {
@@ -186,6 +190,10 @@ section h2 {
 
 .about {
     padding: 90px 3%;
+}
+
+#target-destination {
+    scroll-margin-top: 120px;
 }
 
 

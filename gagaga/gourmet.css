@@ -54,6 +54,8 @@ header {
 
 .logo h2 {
     color: #2d8a4a;
+
+    font-size: 25px;
 }
 
 .logo p {
@@ -88,15 +90,16 @@ nav a:hover {
 /* アクセスボタン */
 
 .contact {
-    padding: 12px 25px;
-
-    background: #2d8a4a;
+    padding: 10px 22px;
 
     color: #fff;
+    
+    background: #2d8a4a;
 
-    border-radius: 5px;
+    border-radius: 25px;
 
-    transition: 0.3s;
+    font-weight: bold;
+
 }
 
 .contact:hover {
